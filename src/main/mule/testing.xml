@@ -76,4 +76,7 @@ output application/java
 		</error-handler>
 >>>>>>> feature/rpaniz/fix003
 	</flow>
+	<flow name="testingFlow1" doc:id="e18715e0-9545-492d-a9ff-321dd74c26e6" >
+		<logger level="INFO" doc:name="Logger" doc:id="9dff7e26-dd6b-483c-95b0-5f034598a73a" />
+	</flow>
 </mule>
