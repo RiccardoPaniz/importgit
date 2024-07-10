@@ -65,7 +65,12 @@ output application/java
 =======
 				<set-payload value="#[payload]" doc:name="Set Payload" doc:id="fba10447-fadc-416e-81bb-168324be1fb6" />
 				<choice doc:name="Choice" doc:id="7a58099d-34d4-4ee2-aa68-bfefcdc4ec76" >
-					<when expression='#[payload == "2"]'/>
+					<when expression='#[payload == "2"]'>
+						<logger level="INFO" doc:name="Logger" doc:id="9dc7b823-0173-4a24-bc5f-0e87146e982d" />
+					</when>
+					<otherwise >
+						<logger level="INFO" doc:name="Logger" doc:id="f78cc1eb-1f4c-42bc-ab37-5083a6af72ba" />
+					</otherwise>
 				</choice>
 >>>>>>> .merge_file_a07820
 			</on-error-continue>
