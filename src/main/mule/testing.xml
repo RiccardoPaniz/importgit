@@ -29,6 +29,9 @@ output application/java
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<choice doc:name="Choice" doc:id="8a691e16-9e79-46ef-9885-3f3d23e268dc" >
+			<when />
+		</choice>
 		<error-handler >
 			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="6fd3b99a-3b51-4c03-a46d-f6b47fa8abd2" >
 				<logger level="INFO" doc:name="Logger" doc:id="6e99194e-868f-47c2-b09d-96a0086f5a13" />
