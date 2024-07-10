@@ -29,33 +29,6 @@ output application/java
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<choice doc:name="Choice" doc:id="3a1b0b58-b5e8-4295-b2a3-6c6a0c896fa6" >
-			<when >
-				<logger level="INFO" doc:name="Logger" doc:id="212e50a7-9d49-462c-8d0a-4b29d6788dce" />
-			</when>
-			<otherwise >
-				<logger level="INFO" doc:name="Logger" doc:id="2f928093-2a98-4f86-b0b5-0992d7e3ad0f" />
-			</otherwise>
-		</choice>
-		<ee:transform doc:name="Transform Message" doc:id="8375d7c4-9791-4a04-aa0f-c520b73f97b6">
-					<ee:message>
-						<ee:set-payload><![CDATA[%dw 2.0
-output application/java
----
-{
-}]]></ee:set-payload>
-					</ee:message>
-				</ee:transform>
-		<logger level="INFO" doc:name="Logger" doc:id="3c806597-3f45-40f2-82d2-ebabb4ed229d" />
-		<ee:transform doc:name="Transform Message" doc:id="22f8aa67-c87c-408b-bd76-161fb76947eb" >
-			<ee:message >
-				<ee:set-payload ><![CDATA[%dw 2.0
-output application/java
----
-{
-}]]></ee:set-payload>
-			</ee:message>
-		</ee:transform>
 		<error-handler >
 			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="6fd3b99a-3b51-4c03-a46d-f6b47fa8abd2" >
 				<logger level="INFO" doc:name="Logger" doc:id="6e99194e-868f-47c2-b09d-96a0086f5a13" />
