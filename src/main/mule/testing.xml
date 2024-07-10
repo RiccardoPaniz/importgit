@@ -46,6 +46,7 @@ output application/java
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="233147e5-3685-42c3-b6a5-32a51fdd46da" />
 		<error-handler >
 			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="6fd3b99a-3b51-4c03-a46d-f6b47fa8abd2" >
 				<logger level="INFO" doc:name="Logger" doc:id="6e99194e-868f-47c2-b09d-96a0086f5a13" />
