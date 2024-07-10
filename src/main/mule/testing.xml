@@ -64,6 +64,9 @@ output application/java
 				</ee:transform>
 =======
 				<set-payload value="#[payload]" doc:name="Set Payload" doc:id="fba10447-fadc-416e-81bb-168324be1fb6" />
+				<choice doc:name="Choice" doc:id="7a58099d-34d4-4ee2-aa68-bfefcdc4ec76" >
+					<when expression='#[payload == "2"]'/>
+				</choice>
 >>>>>>> .merge_file_a07820
 			</on-error-continue>
 		</error-handler>
