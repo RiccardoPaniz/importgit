@@ -19,9 +19,11 @@ output application/java
 			</ee:message>
 		</ee:transform>
 =======
+		<logger level="INFO" doc:name="Logger" doc:id="a4ec29b6-f91e-4c9f-acab-2cbd675578e4" />
 		<error-handler >
 			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="6fd3b99a-3b51-4c03-a46d-f6b47fa8abd2" >
 				<logger level="INFO" doc:name="Logger" doc:id="6e99194e-868f-47c2-b09d-96a0086f5a13" />
+				<logger level="INFO" doc:name="Logger" doc:id="f9ec9506-96c2-463e-be09-0ee90b95c8e4" />
 			</on-error-continue>
 		</error-handler>
 >>>>>>> feature/rpaniz/fix003
