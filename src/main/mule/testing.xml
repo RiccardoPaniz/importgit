@@ -52,6 +52,7 @@ output application/java
 				<logger level="INFO" doc:name="Logger" doc:id="6e99194e-868f-47c2-b09d-96a0086f5a13" />
 				<logger level="INFO" doc:name="Logger" doc:id="f9ec9506-96c2-463e-be09-0ee90b95c8e4" />
 				<logger level="INFO" doc:name="Logger" doc:id="7b47daa8-5abe-4b3f-9768-f4b9637e38b3" />
+				<set-payload value="#[payload]" doc:name="Set Payload" doc:id="fba10447-fadc-416e-81bb-168324be1fb6" />
 			</on-error-continue>
 		</error-handler>
 >>>>>>> feature/rpaniz/fix003
