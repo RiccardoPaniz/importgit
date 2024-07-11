@@ -66,9 +66,27 @@ output application/java
 				<choice doc:name="Choice" doc:id="7a58099d-34d4-4ee2-aa68-bfefcdc4ec76" >
 					<when expression='#[payload == "2"]'>
 						<logger level="INFO" doc:name="Logger" doc:id="9dc7b823-0173-4a24-bc5f-0e87146e982d" />
+						<ee:transform doc:name="Transform Message" doc:id="44799390-e67c-454f-b9fb-ed3253c40e0c" >
+							<ee:message >
+								<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+{
+}]]></ee:set-payload>
+							</ee:message>
+						</ee:transform>
 					</when>
 					<otherwise >
 						<logger level="INFO" doc:name="Logger" doc:id="f78cc1eb-1f4c-42bc-ab37-5083a6af72ba" />
+						<ee:transform doc:name="Transform Message" doc:id="b7c77294-6619-48e8-8882-462b15ca3927" >
+							<ee:message >
+								<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+{
+}]]></ee:set-payload>
+							</ee:message>
+						</ee:transform>
 					</otherwise>
 				</choice>
 >>>>>>> .merge_file_a07820
