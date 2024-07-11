@@ -96,5 +96,14 @@ output application/java
 	</flow>
 	<flow name="testingFlow1" doc:id="e18715e0-9545-492d-a9ff-321dd74c26e6" >
 		<logger level="INFO" doc:name="Logger" doc:id="9dff7e26-dd6b-483c-95b0-5f034598a73a" />
+		<ee:transform doc:name="Transform Message" doc:id="5f888136-bf7e-4e5f-bb8f-98f664190904" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+{
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 	</flow>
 </mule>
