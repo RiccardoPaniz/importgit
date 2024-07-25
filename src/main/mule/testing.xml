@@ -99,6 +99,15 @@ output application/java
 					</ee:message>
 				</ee:transform>
 				<logger level="INFO" doc:name="Logger" doc:id="8d6dc76f-003f-405e-ac1f-5340f7ebb6aa" />
+				<ee:transform doc:name="Transform Message" doc:id="dbd34f61-deed-4023-9a4a-a00c6f8dbe41" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+{
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
 >>>>>>> .merge_file_a07820
 			</on-error-continue>
 		</error-handler>
@@ -136,5 +145,6 @@ output application/java
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="35704e4f-1dda-4ea7-a652-794fb0733297" />
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="cc67849f-b6bd-42c8-b7ba-171c5e96ea28" />
 	</flow>
 </mule>
