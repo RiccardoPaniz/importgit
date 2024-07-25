@@ -117,14 +117,5 @@ output application/java
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="53fcfb25-1260-4b94-ac9e-46bd5e22da97" />
 		<logger level="INFO" doc:name="Logger" doc:id="c6f5d80c-1dcf-4e57-9fdf-1602944fede9" />
-		<ee:transform doc:name="Transform Message" doc:id="7d73f78c-5c39-40e8-b4a0-c57e23b5ef0b" >
-			<ee:message >
-				<ee:set-payload ><![CDATA[%dw 2.0
-output application/java
----
-{
-}]]></ee:set-payload>
-			</ee:message>
-		</ee:transform>
 	</flow>
 </mule>
