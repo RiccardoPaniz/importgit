@@ -88,6 +88,7 @@ output application/java
 }]]></ee:set-payload>
 							</ee:message>
 						</ee:transform>
+						<logger level="INFO" doc:name="Logger" doc:id="4439c8c6-22b7-43a4-9bd6-78d9685ae2e5" />
 					</otherwise>
 				</choice>
 				<ee:transform doc:name="Transform Message" doc:id="fa4ae279-eebc-45fb-87c7-48d0f717606c" >
@@ -149,5 +150,6 @@ output application/java
 		<logger level="INFO" doc:name="Logger" doc:id="35704e4f-1dda-4ea7-a652-794fb0733297" />
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="cc67849f-b6bd-42c8-b7ba-171c5e96ea28" />
 		<logger level="INFO" doc:name="Logger" doc:id="6bdf60a2-6df3-4db0-9a15-059f54ef0146" />
+		<set-variable value="" doc:name="Set Variable" doc:id="117917b9-c7c6-4bf2-9411-647761a6cd5f" variableName="asd"/>
 	</flow>
 </mule>
