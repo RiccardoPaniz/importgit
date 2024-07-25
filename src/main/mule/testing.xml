@@ -88,6 +88,7 @@ output application/java
 }]]></ee:set-payload>
 							</ee:message>
 						</ee:transform>
+						<logger level="INFO" doc:name="Logger" doc:id="4439c8c6-22b7-43a4-9bd6-78d9685ae2e5" />
 					</otherwise>
 				</choice>
 				<ee:transform doc:name="Transform Message" doc:id="fa4ae279-eebc-45fb-87c7-48d0f717606c" >
