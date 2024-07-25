@@ -75,6 +75,7 @@ output application/java
 }]]></ee:set-payload>
 							</ee:message>
 						</ee:transform>
+						<logger level="INFO" doc:name="Logger" doc:id="ac6c221e-4faa-4d87-a562-eaba5b235d00" />
 					</when>
 					<otherwise >
 						<logger level="INFO" doc:name="Logger" doc:id="f78cc1eb-1f4c-42bc-ab37-5083a6af72ba" />
