@@ -75,6 +75,7 @@ output application/java
 }]]></ee:set-payload>
 							</ee:message>
 						</ee:transform>
+						<logger level="INFO" doc:name="Logger" doc:id="ac6c221e-4faa-4d87-a562-eaba5b235d00" />
 					</when>
 					<otherwise >
 						<logger level="INFO" doc:name="Logger" doc:id="f78cc1eb-1f4c-42bc-ab37-5083a6af72ba" />
@@ -108,6 +109,7 @@ output application/java
 }]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="d2cc800f-e50b-49df-811b-5d26045cbbd5" />
 >>>>>>> .merge_file_a07820
 			</on-error-continue>
 		</error-handler>
@@ -146,5 +148,6 @@ output application/java
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="35704e4f-1dda-4ea7-a652-794fb0733297" />
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="cc67849f-b6bd-42c8-b7ba-171c5e96ea28" />
+		<logger level="INFO" doc:name="Logger" doc:id="6bdf60a2-6df3-4db0-9a15-059f54ef0146" />
 	</flow>
 </mule>
